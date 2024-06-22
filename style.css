@@ -80,3 +80,10 @@ button {
   transform: translate(-50%, -50%);
 }
 
+/* Media Query to hide elements on mobile devices */
+@media (max-width: 600px) {
+  .knob-text,
+  .right-text {
+    display: none;
+  }
+}
