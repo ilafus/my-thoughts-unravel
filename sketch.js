@@ -274,3 +274,7 @@ function togglePlaying() {
     button.show();
   }
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
