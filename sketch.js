@@ -122,12 +122,12 @@ function setup() {
   p8 = createP("Knob 8: song speed").position(20, 700);
   s8.hide();
 
-  p9 = createP('Press "a"').position(1750, 150);
-  p10 = createP('Press "space"').position(1750, 350);
-  p11 = createP("Try to drag the stars").position(1750, 550);
+  p9 = createP('Press "a"');
+  p10 = createP('Press "space"');
+  p11 = createP("Try to drag the stars");
   p12 = createP(
     "Connect your Launchkey mini MIDI controller for a better experience"
-  ).position(470, 750);
+  );
 
   //pearl object
   pearl1 = new Pearl(100, 50);
