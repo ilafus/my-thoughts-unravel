@@ -1,12 +1,78 @@
-html,
-body {
+body, html {
   margin: 0;
   padding: 0;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Lucida Console", monospace;
 }
-canvas {
-  display: block;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  right: 20px;
+}
+
+
+.social-links img {
+  width: 50px;
+}
+
+.left-side, .right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 20px;
+}
+
+.left-side {
+  left: 20px;
+}
+
+.right-side {
+  right: 20px;
+  margin-top: 200px;
+  text-align: right;
+}
+
+.bottom-center {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  left: 600px;
+}
+
+p {
+  color: green;
+  font-size: 18px; /* Adjusted to fit better on different screen sizes */
+}
+
+button {
+  padding: 20px 40px;
+  font-size: 24px;
+  background-color: #8A2BE2;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
