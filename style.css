@@ -82,8 +82,9 @@ button {
 
 /* Media Query to hide elements on mobile devices */
 @media (max-width: 600px) {
-  .knob-text,
-  .right-text {
+  .left-side,
+  .right-side,
+  .bottom-center {
     display: none;
   }
 }
