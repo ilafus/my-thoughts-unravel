@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
+    <script src="https://p5play.org/v3/planck.min.js"></script>
+    <script src="https://p5play.org/v3/p5play.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+    <style>
+            p  {
+              color: green; //color of the text in the paragraph
+              font-size: 36px;
+              font: ultra-condensed small-caps 36px "Fira Sans", sans-serif;
+              font-family: "Lucida Console", monospace;
+              text-align: center; 
+
+            }
+
+           .social-links {
+          position: absolute;
+          top: 50px;
+          right: 10px; 
+          display: flex; 
+          gap: 10px;
+      }
+
+      .social-links img {
+          width: 50px;
+      }
+
+      .social-icon {
+          display: inline-block;
+      }
+
+      .spotify {
+          /* No need to specify top and left as they are positioned by flexbox */
+      }
+
+      .apple {
+          /* No need to specify top and left as they are positioned by flexbox */
+      }
+
+      .instagram {
+          /* No need to specify top and left as they are positioned by flexbox */
+      }
+
+      .linktree {
+          /* No need to specify top and left as they are positioned by flexbox */
+      }
+
+            button {
+              position: absolute;
+              top:calc(50% - 50px); 
+                  left: calc(50% - 80px);
+       padding: 50px 80px;
+        font-size: 50px;
+        font-family: "monospace", "Lucida Console";
+        color: #fff;
+        background-color: #8A2BE2;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+            }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="social-links">
+        <a
+          href="https://open.spotify.com/intl-it/artist/6bDazA0775ffe0LSmjkWD9?si=QcdiomfOSkOVBlVqqwbVOw&utm_medium=share&utm_source=linktree&nd=1&dlsi=d4bc544ae0cb453e"
+          class="social-icon spotify"
+        >
+          <img src="spotify-icon.png" alt="Spotify" />
+
+          <a
+            href="https://music.apple.com/us/artist/maehwa-ro/1623775793"
+            class="social-icon apple"
+          >
+            <img src="applemusic-icon.png" alt="Apple Music" />
+          </a>
+          <a
+            href="https://www.instagram.com/maehwa.ro"
+            class="social-icon instagram"
+          >
+            <img src="instagram-icon.png" alt="Instagram" />
+          </a>
+
+          <a href="https://linktr.ee/maehwaro" class="social-icon linktree">
+            <img src="linktree-icon.png" alt="Linktree" />
+          </a>
+        </a>
+      </div>
+    </main>
+    <script src="sketch.js"></script>
+    <script src="midi.js"></script>
+    <script src="pearl.js"></script>
+  </body>
+</html>
