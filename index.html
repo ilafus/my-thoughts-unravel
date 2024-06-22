@@ -1,81 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
     <script src="https://p5play.org/v3/planck.min.js"></script>
     <script src="https://p5play.org/v3/p5play.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <meta charset="utf-8" />
-    <style>
-         .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .social-links {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-
-    .social-links img {
-      width: 50px;
-    }
-
-    .social-icon {
-      display: inline-block;
-    }
-
-    .spotify, .apple, .instagram, .linktree {
-      /* No additional positioning needed */
-    }
-
-    p {
-      color: green;
-      font-size: 36px;
-      font: ultra-condensed small-caps 36px "Fira Sans", sans-serif;
-      font-family: "Lucida Console", monospace;
-      text-align: center;
-      margin: 0;
-    }
-
-    button {
-      padding: 20px 40px;
-      font-size: 24px;
-      font-family: "monospace", "Lucida Console";
-      color: #fff;
-      background-color: #8A2BE2;
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      margin-top: 20px;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="social-links">
-      <a href="https://open.spotify.com/intl-it/artist/6bDazA0775ffe0LSmjkWD9?si=QcdiomfOSkOVBlVqqwbVOw&utm_medium=share&utm_source=linktree&nd=1&dlsi=d4bc544ae0cb453e" class="social-icon spotify">
-        <img src="spotify-icon.png" alt="Spotify" />
-      </a>
-      <a href="https://music.apple.com/us/artist/maehwa-ro/1623775793" class="social-icon apple">
-        <img src="applemusic-icon.png" alt="Apple Music" />
-      </a>
-      <a href="https://www.instagram.com/maehwa.ro" class="social-icon instagram">
-        <img src="instagram-icon.png" alt="Instagram" />
-      </a>
-      <a href="https://linktr.ee/maehwaro" class="social-icon linktree">
-        <img src="linktree-icon.png" alt="Linktree" />
-      </a>
+  </head>
+  <body>
+    <div class="container">
+      <div class="social-links">
+        <a
+          href="https://open.spotify.com/intl-it/artist/6bDazA0775ffe0LSmjkWD9?si=QcdiomfOSkOVBlVqqwbVOw&utm_medium=share&utm_source=linktree&nd=1&dlsi=d4bc544ae0cb453e"
+          class="social-icon spotify"
+        >
+          <img src="spotify-icon.png" alt="Spotify" />
+        </a>
+        <a
+          href="https://music.apple.com/us/artist/maehwa-ro/1623775793"
+          class="social-icon apple"
+        >
+          <img src="applemusic-icon.png" alt="Apple Music" />
+        </a>
+        <a
+          href="https://www.instagram.com/maehwa.ro"
+          class="social-icon instagram"
+        >
+          <img src="instagram-icon.png" alt="Instagram" />
+        </a>
+        <a href="https://linktr.ee/maehwaro" class="social-icon linktree">
+          <img src="linktree-icon.png" alt="Linktree" />
+        </a>
+      </div>
+      <div class="left-side">
+        <p id="p1">Knob 1: number of shapes</p>
+        <div id="s1"></div>
+        <p id="p2">Knob 2: orange shape</p>
+        <div id="s2"></div>
+        <p id="p3">Knob 3: white shape</p>
+        <div id="s3"></div>
+        <p id="p4">Knob 4: orange shape - out</p>
+        <div id="s4"></div>
+        <p id="p5">Knob 5: orange shape - in</p>
+        <div id="s5"></div>
+        <p id="p6">Knob 6: rotation</p>
+        <div id="s6"></div>
+        <p id="p7">Knob 7: song volume</p>
+        <div id="s7"></div>
+        <p id="p8">Knob 8: song speed</p>
+        <div id="s8"></div>
+      </div>
+      <div class="right-side">
+        <p id="p9">Press "a"</p>
+        <p id="p10">Press "space"</p>
+        <p id="p11">Try to drag the stars</p>
+      </div>
+      <div class="bottom-center">
+        <p id="p12">
+          Connect your Launchkey mini MIDI controller for a better experience
+        </p>
+      </div>
     </div>
-    <p>Some centered text</p>
-    <button>PLAY</button>
-  </div>
-  <script src="sketch.js"></script>
-  <script src="midi.js"></script>
-  <script src="pearl.js"></script>
-</body>
+    <script src="sketch.js"></script>
+    <script src="midi.js"></script>
+    <script src="pearl.js"></script>
+  </body>
 </html>
