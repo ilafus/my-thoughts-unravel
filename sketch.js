@@ -98,36 +98,21 @@ function setup() {
 
   //SLIDERS (hidden)
   s1 = createSlider(q, q, 3).position(20, 150);
-  p1 = createP("Knob 1: number of shapes").position(20, 0);
   s1.hide();
   s2 = createSlider(w, w, 10).position(20, 250);
-  p2 = createP("Knob 2: orange shape").position(20, 100);
   s2.hide();
   s3 = createSlider(p, p, 5).position(20, 350);
-  p3 = createP("Knob 3: white shape").position(20, 200);
   s3.hide();
   s4 = createSlider(t, t, 100).position(20, 450);
-  p4 = createP("Knob 4: orange shape - out").position(20, 300);
   s4.hide();
   s5 = createSlider(u, u, 100).position(20, 550);
-  p5 = createP("Knob 5: orange shape - in").position(20, 400);
   s5.hide();
   s6 = createSlider(o, o, 1).position(20, 650);
-  p6 = createP("Knob 6: rotation").position(20, 500);
   s6.hide();
   s7 = createSlider(volume, volume, 1).position(20, 750);
-  p7 = createP("Knob 7: song volume").position(20, 600);
   s7.hide();
   s8 = createSlider(speed, speed, 1).position(20, 850);
-  p8 = createP("Knob 8: song speed").position(20, 700);
   s8.hide();
-
-  p9 = createP('Press "a"');
-  p10 = createP('Press "space"');
-  p11 = createP("Try to drag the stars");
-  p12 = createP(
-    "Connect your Launchkey mini MIDI controller for a better experience"
-  );
 
   //pearl object
   pearl1 = new Pearl(100, 50);
@@ -278,3 +263,6 @@ function togglePlaying() {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
+
+//console.log('Width: ' + window.innerWidth);
+//console.log('Height: ' + window.innerHeight);
